@@ -6,6 +6,7 @@ import ecom from "../../Assets/Projects/ecom.jpg";
 import movie from "../../Assets/Projects/movie.jpg";
 import grocery from "../../Assets/Projects/Grocery.jpg";
 import SN from "../../Assets/Projects/SN.jpg";
+import PM from "../../Assets/Projects/PM-System.png";
 
 function Projects() {
   return (
@@ -19,6 +20,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={PM}
+              isBlog={false}
+              title="Patient Management System"
+              description="A microservices-based backend system built with Java 21 and Spring Boot that manages patient records in a distributed architecture. It features RESTful APIs, gRPC for inter-service communication, Kafka for asynchronous messaging, and JWT-based authentication via a dedicated auth service. The system includes an API Gateway using Spring Cloud Gateway and is fully Dockerized with PostgreSQL databases and LocalStack for AWS cloud simulation."
+              ghLink="https://github.com/diliboy/Patient-Management-System-Java"
+
+            />
+          </Col>
+        
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={grocery}
