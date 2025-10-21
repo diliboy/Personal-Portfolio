@@ -7,6 +7,7 @@ import movie from "../../Assets/Projects/movie.jpg";
 import grocery from "../../Assets/Projects/Grocery.jpg";
 import SN from "../../Assets/Projects/SN.jpg";
 import PM from "../../Assets/Projects/PM-System.png";
+import JT from "../../Assets/Projects/JT.png";
 
 function Projects() {
   return (
@@ -27,6 +28,17 @@ function Projects() {
               title="Patient Management System"
               description="A microservices-based backend system built with Java 21 and Spring Boot that manages patient records in a distributed architecture. It features RESTful APIs, gRPC for inter-service communication, Kafka for asynchronous messaging, and JWT-based authentication via a dedicated auth service. The system includes an API Gateway using Spring Cloud Gateway and is fully Dockerized with PostgreSQL databases and LocalStack for AWS cloud simulation."
               ghLink="https://github.com/diliboy/Patient-Management-System-Java"
+
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={JT}
+              isBlog={false}
+              title="Job Application Tracker"
+              description="A full-stack web application designed to help job seekers manage and track their job applications efficiently. This project was built as a learning initiative to master Python and FastAPI with the help of web, while transitioning from Java/Spring Boot development, demonstrating practical application of modern web development technologies and best practices."
+              ghLink="https://github.com/diliboy/Job-Tracker-Python_and_React"
 
             />
           </Col>
